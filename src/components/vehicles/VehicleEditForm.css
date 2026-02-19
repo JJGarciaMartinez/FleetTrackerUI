@@ -1,0 +1,132 @@
+.vehicle-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vehicle-edit-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.vehicle-edit-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.vehicle-edit-form__field--full {
+  grid-column: 1 / -1;
+}
+
+.vehicle-edit-form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-2);
+}
+
+.vehicle-edit-form__section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-2);
+  margin: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.vehicle-edit-form__input {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background-color: white;
+  color: var(--color-2);
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.vehicle-edit-form__input:focus {
+  outline: none;
+  border-color: var(--color-2);
+  box-shadow: 0 0 0 3px rgba(12, 74, 110, 0.1);
+}
+
+.vehicle-edit-form__input:disabled {
+  background-color: #f9fafb;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.vehicle-edit-form__input--error {
+  border-color: #ef4444;
+}
+
+.vehicle-edit-form__input--error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.vehicle-edit-form__error {
+  font-size: 0.8125rem;
+  color: #ef4444;
+  min-height: 1rem;
+}
+
+.vehicle-edit-form__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.vehicle-edit-form__btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.vehicle-edit-form__btn--primary {
+  background-color: var(--color-2);
+  color: white;
+}
+
+.vehicle-edit-form__btn--primary:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.vehicle-edit-form__btn--secondary {
+  background-color: #f3f4f6;
+  color: var(--color-2);
+}
+
+.vehicle-edit-form__btn--secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.vehicle-edit-form__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .vehicle-edit-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-edit-form__actions {
+    flex-direction: column-reverse;
+  }
+
+  .vehicle-edit-form__actions button {
+    width: 100%;
+  }
+}

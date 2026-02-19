@@ -1,0 +1,28 @@
+.info-screen-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--color-1);
+}
+
+.info-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  border-radius: 1.45rem;
+  gap: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  p,
+  h1,
+  svg,
+  path {
+    color: var(--color-2);
+  }
+}

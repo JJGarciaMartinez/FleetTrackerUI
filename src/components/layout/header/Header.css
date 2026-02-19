@@ -1,0 +1,22 @@
+.header-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1.45rem;
+  position: sticky;
+  inset: 0;
+  top: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(10px);
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}

@@ -1,0 +1,37 @@
+.alert-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--color-1);
+  min-height: 53px;
+}
+
+.alert-card--read {
+  filter: brightness(0.95);
+}
+
+.alert-card__message {
+  font-size: 0.95rem;
+  color: inherit;
+}
+
+.alert-card__button {
+  background-color: var(--color-2);
+  border: none;
+  color: var(--color-1);
+  cursor: pointer;
+  font-size: 0.845rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.45rem;
+}
+
+.alert-card__button:hover {
+  filter: brightness(1.2);
+}
+
+.alert-card__button:active {
+  filter: brightness(0.8);
+}
