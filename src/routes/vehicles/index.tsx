@@ -201,13 +201,14 @@ export default function VehiclesList(): JSX.Element {
 
       <div className="filters-card">
         <SearchBar
-          placeholder="Buscar por placa, marca o modelo..."
+          placeholder="Buscar por placa especifica..."
           defaultValue={filters.q}
           action={handleSearch}
           pending={isPending}
         />
 
         <Filters
+          key={`${filters.status || ''}-${filters.type || ''}`}
           groups={filterGroups}
           action={handleFiltersSubmit}
           onClear={clearFilters}
