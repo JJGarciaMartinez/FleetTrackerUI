@@ -1,0 +1,142 @@
+.vehicle-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header */
+.vehicle-detail__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.vehicle-detail__header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vehicle-detail__back-link {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.vehicle-detail__back-link:hover {
+  color: var(--color-2);
+}
+
+.vehicle-detail__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-2);
+  margin: 0;
+}
+
+.vehicle-detail__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vehicle-detail__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.vehicle-detail__btn--secondary {
+  background-color: #f3f4f6;
+
+  & path {
+    color: var(--color-2);
+  }
+}
+
+.vehicle-detail__btn--secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.vehicle-detail__btn--destructive {
+  background-color: #fee2e2;
+
+  & path {
+    color: #991b1b;
+  }
+}
+
+.vehicle-detail__btn--destructive:hover {
+  background-color: #fecaca;
+}
+
+/* Content grid */
+.vehicle-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Not found state */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.not-found-text {
+  color: #6b7280;
+}
+
+.btn-back {
+  padding: 0.625rem 1rem;
+  background-color: var(--color-2);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.btn-back:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vehicle-detail {
+    padding: 1rem;
+  }
+
+  .vehicle-detail__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vehicle-detail__header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .vehicle-detail__actions {
+    width: 100%;
+  }
+
+  .vehicle-detail__actions button {
+    flex: 1;
+  }
+
+  .vehicle-detail__grid {
+    grid-template-columns: 1fr;
+  }
+}

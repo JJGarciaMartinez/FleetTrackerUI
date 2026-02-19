@@ -1,0 +1,131 @@
+.detail-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.detail-card--status {
+  margin-top: 1.5rem;
+}
+
+.detail-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-2);
+  margin: 0 0 1rem 0;
+}
+
+.detail-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-row__label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.detail-row__value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-2);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Status badge styles (shared with VehiclesList) */
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-maintenance {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Status change buttons */
+.status-change-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.status-btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+  color: white;
+}
+
+.status-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-btn--active {
+  background-color: #16a34a;
+}
+
+.status-btn--active:hover:not(:disabled) {
+  background-color: #15803d;
+}
+
+.status-btn--maintenance {
+  background-color: #ca8a04;
+}
+
+.status-btn--maintenance:hover:not(:disabled) {
+  background-color: #a16207;
+}
+
+.status-btn--inactive {
+  background-color: #dc2626;
+}
+
+.status-btn--inactive:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .detail-card {
+    padding: 1.25rem;
+  }
+
+  .status-change-buttons {
+    flex-direction: column;
+  }
+
+  .status-btn {
+    width: 100%;
+  }
+}

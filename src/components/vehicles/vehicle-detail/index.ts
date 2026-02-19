@@ -1,0 +1,5 @@
+export { default as VehicleGeneralInfo } from './VehicleGeneralInfo'
+export { default as VehicleMetrics } from './VehicleMetrics'
+export { default as VehicleLocation } from './VehicleLocation'
+export { default as VehicleAssignment } from './VehicleAssignment'
+export { default as VehicleStatusChange } from './VehicleStatusChange'
