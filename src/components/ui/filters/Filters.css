@@ -1,0 +1,100 @@
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filters__groups {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filters__group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filters__label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.filters__select {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background-color: white;
+  color: var(--color-2);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230c4a6e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.filters__select:focus {
+  outline: none;
+  border-color: var(--color-2);
+}
+
+.filters__select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.filters__clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #6b7280;
+  transition: color 0.2s ease-in-out;
+}
+
+.filters__clear:hover:not(:disabled) {
+  color: var(--color-2);
+}
+
+.filters__clear:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.filters__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filters__submit {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-color: var(--color-2);
+  color: white;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.filters__submit:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.filters__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .see-vehicles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+  }
+}

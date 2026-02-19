@@ -1,0 +1,40 @@
+.card-stats {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-stats-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card-stats-link .card-stats:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-stats--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card-stats__title {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.card-stats__value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.card-stats__subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
